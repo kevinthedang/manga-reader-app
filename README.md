@@ -1,6 +1,6 @@
 # Personal Manga Reader App
 
-Private, self-hosted manga reader for organizing and reading a personal collection across your phone, desktop, and the web.
+Private, self-hosted manga reader for organizing and reading a personal collection on iOS, Android, and Linux.
 
 > [!NOTE]
 > This project is just an idea for now.
@@ -23,8 +23,9 @@ I will focus on the following features:
 
 ```text
 ┌──────────────────┐
-│ Mobile Client    │
-│ SwiftUI/Flutter  │
+│ Flutter Client   │
+│ iOS, Android,    │
+│ and Linux        │
 └────────┬─────────┘
          │ REST API
          ▼
@@ -62,10 +63,7 @@ Good for:
 
 ### Frontend
 
-Some options to consider:
-
-* SwiftUI (Good for IPhone/IPad) - Native for iOS but Xcode
-* Flutter (Good for multiple platforms)
+Use Flutter for iOS, Android, and Linux clients.
 
 ### Initial Recommendation
 
@@ -73,6 +71,7 @@ Start with:
 
 ```text
 Client: Flutter
+Platforms: iOS, Android, and Linux
 Backend: Komga
 Storage: Home server, NAS, or local computer
 ```
@@ -218,8 +217,8 @@ This project should not:
 
 1. Configure production server access through HTTPS or a private VPN.
 2. Store credentials securely.
-3. Build the iOS application.
-4. Install it on personally owned devices.
+3. Build the iOS and Android applications.
+4. Install them on personally owned devices.
 5. Test local, remote, and offline reading.
 
 ## Possible Repository Names
@@ -233,9 +232,7 @@ This project should not:
 
 ## Open Questions
 
-- [ ] Use Flutter or SwiftUI?
 - [ ] Use Komga or Kavita?
-- [ ] Support iOS only or multiple platforms?
 - [ ] Use a private VPN or expose the server through HTTPS?
 - [ ] Store progress exclusively on the server or also locally?
 - [ ] Support CBZ only for the MVP, or include PDF and image folders?
